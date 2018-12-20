@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{70298B84-CA2B-DADB-268D-466684F0BAC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_0;UNITY_5_6;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\GameLogic\Actions\ActionCategory.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\ActionType.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\AttackTargetType.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\BasicAttack.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\DamageType.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\GenericAction.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\GenericAttack.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\Move.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\Network\AttackNetwork.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\Network\ChangeStanceNetwork.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\Network\GenericNetworkAction.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\Network\MoveNetwork.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\Network\SpawnUnitNetwork.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\Spell.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\SpellType.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\UnitActions\Heroes\Fighter.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\UnitActions\Heroes\Mage.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\UnitActions\Heroes\Rogue.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\UnitActions\Villains\Assassin.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\UnitActions\Villains\Sorceror.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Actions\UnitActions\Villains\Warrior.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Effects\EffectChangePosition.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Effects\EffectDamage.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Effects\EffectReduceAP.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Effects\GenericEffect.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Map\Battlefield.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Map\BattlefieldGenerator.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Roles.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\RolesExtensionsMethods.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\StanceExtensionMethods.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\TurnController.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Faction.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\GenericUnit.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\GenericUnitFactory.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Heroes\Fighter.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Heroes\Mage.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Heroes\Rogue.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\MapObjects\ControlWall.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\MapObjects\Trap.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Stance.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\UnitType.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Villains\Assassin.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Villains\Sorcerer.cs" />
+     <Compile Include="Assets\Scripts\GameLogic\Units\Villains\Warrior.cs" />
+     <Compile Include="Assets\Scripts\Graphics\ActionSprite.cs" />
+     <Compile Include="Assets\Scripts\Graphics\GraphicsRegistry.cs" />
+     <Compile Include="Assets\Scripts\Graphics\SpriteGraphicsHandler.cs" />
+     <Compile Include="Assets\Scripts\Graphics\UnitSprite.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\DataStructure\FractionalHex.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\DataStructure\Hex.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\DataStructure\HexUtility.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\DataStructure\Layout.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\DataStructure\Orientation.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\DataStructure\Point.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\GridStructure\GridUtility.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\GridStructure\HexCellData.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\GridStructure\HexGrid.cs" />
+     <Compile Include="Assets\Scripts\Hexlibrary\GridStructure\HexMesh.cs" />
+     <Compile Include="Assets\Scripts\Network\Lobby\LobbyHeader.cs" />
+     <Compile Include="Assets\Scripts\Network\Lobby\LobbyList.cs" />
+     <Compile Include="Assets\Scripts\Network\Lobby\LobbyManager.cs" />
+     <Compile Include="Assets\Scripts\Network\Lobby\LobbyPlayer.cs" />
+     <Compile Include="Assets\Scripts\Network\NetworkManagerHUDCustom.cs" />
+     <Compile Include="Assets\Scripts\Network\NetworkUtility.cs" />
+     <Compile Include="Assets\Scripts\Network\client.cs" />
+     <Compile Include="Assets\Scripts\UI\UIBuilder.cs" />
+     <Compile Include="Assets\Scripts\UI\UIHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\UIItem.cs" />
+     <Compile Include="Assets\Scripts\UI\cameraMovement.cs" />
+     <Compile Include="Assets\Scripts\Utility\BidirectionalDictionary.cs" />
+     <Compile Include="Assets\Scripts\Utility\EdgeNode.cs" />
+     <Compile Include="Assets\Scripts\Utility\SerializableContainers\BidirectionalDictionaryHexGenericUnit.cs" />
+     <Compile Include="Assets\Scripts\Utility\SerializableContainers\DictionaryHexHexCellData.cs" />
+     <Compile Include="Assets\Scripts\Utility\SerializableContainers\SerializableColor.cs" />
+     <Compile Include="Assets\Scripts\Utility\SerializableContainers\SerializableDictionary.cs" />
+     <None Include="Assets\Resources\Shaders\VertexColours.shader" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

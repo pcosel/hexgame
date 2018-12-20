@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPMI", "Assembly-CSharp.csproj", "{70298B84-CA2B-DADB-268D-466684F0BAC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70298B84-CA2B-DADB-268D-466684F0BAC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70298B84-CA2B-DADB-268D-466684F0BAC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70298B84-CA2B-DADB-268D-466684F0BAC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70298B84-CA2B-DADB-268D-466684F0BAC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
